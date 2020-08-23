@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".addItems">
+
+    <Button
+        android:id="@+id/add_items_to_sheet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="40dp"
+        android:text="add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/additemsTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="ADD NEW DATA"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/add_items_to_sheet"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/gothram_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:focusable="auto"
+        android:hint="ENTER GOTHRAM"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/surname_input"
+        app:layout_constraintStart_toStartOf="@+id/surname_input"
+        app:layout_constraintTop_toBottomOf="@+id/surname_input" />
+
+    <EditText
+        android:id="@+id/surname_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:ems="10"
+        android:hint="ENTER SURNAME"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/additemsTxt" />
+
+    <EditText
+        android:id="@+id/pravara_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="ENTER PRAVARA"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/shaakha_input"
+        app:layout_constraintStart_toStartOf="@+id/shaakha_input"
+        app:layout_constraintTop_toBottomOf="@+id/shaakha_input" />
+
+    <EditText
+        android:id="@+id/shaakha_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="ENTER SHAAKHA"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/gothram_input"
+        app:layout_constraintStart_toStartOf="@+id/gothram_input"
+        app:layout_constraintTop_toBottomOf="@+id/gothram_input" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
